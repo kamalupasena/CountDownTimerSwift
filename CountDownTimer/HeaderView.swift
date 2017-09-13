@@ -1,6 +1,6 @@
 //
 //  HeaderView.swift
-//  infotel
+//  
 //
 //  Created by Kamal Sampath Upasena on 8/21/17.
 //  Copyright © 2017 bhasha. All rights reserved.
