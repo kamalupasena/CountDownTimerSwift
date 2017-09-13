@@ -12,6 +12,8 @@
 		8A1B20281F6962AA002F0322 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A1B20261F6962AA002F0322 /* Main.storyboard */; };
 		8A1B202A1F6962AA002F0322 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A1B20291F6962AA002F0322 /* Assets.xcassets */; };
 		8A1B202D1F6962AA002F0322 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A1B202B1F6962AA002F0322 /* LaunchScreen.storyboard */; };
+		8A1B20371F69654F002F0322 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1B20351F69654F002F0322 /* HeaderView.swift */; };
+		8A1B20381F69654F002F0322 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A1B20361F69654F002F0322 /* HeaderView.xib */; };
 		C53F7594924FD45D252AFC69 /* Pods_CountDownTimer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEAD0F079F9721595E724BF9 /* Pods_CountDownTimer.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,8 @@
 		8A1B20291F6962AA002F0322 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A1B202C1F6962AA002F0322 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A1B202E1F6962AA002F0322 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A1B20351F69654F002F0322 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		8A1B20361F69654F002F0322 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		BFB711DDD6B4090CE8A0DA72 /* Pods-CountDownTimer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CountDownTimer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CountDownTimer/Pods-CountDownTimer.debug.xcconfig"; sourceTree = "<group>"; };
 		F381765C19263037F615164A /* Pods-CountDownTimer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CountDownTimer.release.xcconfig"; path = "Pods/Target Support Files/Pods-CountDownTimer/Pods-CountDownTimer.release.xcconfig"; sourceTree = "<group>"; };
 		FEAD0F079F9721595E724BF9 /* Pods_CountDownTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CountDownTimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +82,7 @@
 		8A1B20211F6962AA002F0322 /* CountDownTimer */ = {
 			isa = PBXGroup;
 			children = (
+				8A1B20341F69652E002F0322 /* View */,
 				8A1B20221F6962AA002F0322 /* AppDelegate.swift */,
 				8A1B20241F6962AA002F0322 /* ViewController.swift */,
 				8A1B20261F6962AA002F0322 /* Main.storyboard */,
@@ -86,6 +91,15 @@
 				8A1B202E1F6962AA002F0322 /* Info.plist */,
 			);
 			path = CountDownTimer;
+			sourceTree = "<group>";
+		};
+		8A1B20341F69652E002F0322 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8A1B20351F69654F002F0322 /* HeaderView.swift */,
+				8A1B20361F69654F002F0322 /* HeaderView.xib */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +167,7 @@
 				8A1B202D1F6962AA002F0322 /* LaunchScreen.storyboard in Resources */,
 				8A1B202A1F6962AA002F0322 /* Assets.xcassets in Resources */,
 				8A1B20281F6962AA002F0322 /* Main.storyboard in Resources */,
+				8A1B20381F69654F002F0322 /* HeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A1B20251F6962AA002F0322 /* ViewController.swift in Sources */,
+				8A1B20371F69654F002F0322 /* HeaderView.swift in Sources */,
 				8A1B20231F6962AA002F0322 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,6 +394,7 @@
 				8A1B20331F6962AA002F0322 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
