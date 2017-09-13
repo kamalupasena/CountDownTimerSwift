@@ -12,6 +12,7 @@
 		8A1B20281F6962AA002F0322 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A1B20261F6962AA002F0322 /* Main.storyboard */; };
 		8A1B202A1F6962AA002F0322 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A1B20291F6962AA002F0322 /* Assets.xcassets */; };
 		8A1B202D1F6962AA002F0322 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A1B202B1F6962AA002F0322 /* LaunchScreen.storyboard */; };
+		C53F7594924FD45D252AFC69 /* Pods_CountDownTimer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEAD0F079F9721595E724BF9 /* Pods_CountDownTimer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		8A1B20291F6962AA002F0322 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A1B202C1F6962AA002F0322 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A1B202E1F6962AA002F0322 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFB711DDD6B4090CE8A0DA72 /* Pods-CountDownTimer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CountDownTimer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CountDownTimer/Pods-CountDownTimer.debug.xcconfig"; sourceTree = "<group>"; };
+		F381765C19263037F615164A /* Pods-CountDownTimer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CountDownTimer.release.xcconfig"; path = "Pods/Target Support Files/Pods-CountDownTimer/Pods-CountDownTimer.release.xcconfig"; sourceTree = "<group>"; };
+		FEAD0F079F9721595E724BF9 /* Pods_CountDownTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CountDownTimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C53F7594924FD45D252AFC69 /* Pods_CountDownTimer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19703E72F5134F0C2E6A2341 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BFB711DDD6B4090CE8A0DA72 /* Pods-CountDownTimer.debug.xcconfig */,
+				F381765C19263037F615164A /* Pods-CountDownTimer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6D2777B931C995A063F5003D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FEAD0F079F9721595E724BF9 /* Pods_CountDownTimer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8A1B20161F6962AA002F0322 = {
 			isa = PBXGroup;
 			children = (
 				8A1B20211F6962AA002F0322 /* CountDownTimer */,
 				8A1B20201F6962AA002F0322 /* Products */,
+				19703E72F5134F0C2E6A2341 /* Pods */,
+				6D2777B931C995A063F5003D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A1B20311F6962AA002F0322 /* Build configuration list for PBXNativeTarget "CountDownTimer" */;
 			buildPhases = (
+				B01142E9F86A9D08A5933932 /* [CP] Check Pods Manifest.lock */,
 				8A1B201B1F6962AA002F0322 /* Sources */,
 				8A1B201C1F6962AA002F0322 /* Frameworks */,
 				8A1B201D1F6962AA002F0322 /* Resources */,
+				E4C8C9432C3EFA3D8BDA7380 /* [CP] Embed Pods Frameworks */,
+				DC846D4B38C81AB14BBC9694 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B01142E9F86A9D08A5933932 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DC846D4B38C81AB14BBC9694 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CountDownTimer/Pods-CountDownTimer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4C8C9432C3EFA3D8BDA7380 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CountDownTimer/Pods-CountDownTimer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8A1B201B1F6962AA002F0322 /* Sources */ = {
@@ -260,6 +335,7 @@
 		};
 		8A1B20321F6962AA002F0322 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFB711DDD6B4090CE8A0DA72 /* Pods-CountDownTimer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CountDownTimer/Info.plist;
@@ -272,6 +348,7 @@
 		};
 		8A1B20331F6962AA002F0322 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F381765C19263037F615164A /* Pods-CountDownTimer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CountDownTimer/Info.plist;
