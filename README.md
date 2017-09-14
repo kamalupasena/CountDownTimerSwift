@@ -1,4 +1,4 @@
-# CountDownTimerSwift
+# Countdown Timer Swift
 
 ## Preview
 
